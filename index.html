@@ -1,10 +1,32 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mi Página</title>
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/Script_Menu.js"></script>
 </head>
 <body>
-  <h1>Hola mundo desde GitHub Pages TIKware</h1>
+    <!-- Barra superior -->
+    <header class="navbar">
+        <button class="menu-btn" onclick="abrirMenuLateral()">☰</button>
+        <nav class="nav-opciones">
+            <a href="#">Inicio</a>
+            <a href="#">Noticias</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Menú lateral oculto -->
+    <aside id="menuLateral" class="menu-lateral">
+        <button class="cerrar-btn" onclick="cerrarMenuLateral()">✖</button>
+        <br><br>
+        <a href="#">Inicio</a>
+        <a href="#">Noticias</a>
+        <a href="#">Contacto</a>
+    </aside>
+
+    <h1 class="DIDTitulo" style="margin-top:80px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est mollitia similique optio quidem voluptates ipsum quia rem, sed hic inventore expedita iste error aperiam sequi. Sint adipisci esse fugit hic!</h1>
+
+
 </body>
 </html>

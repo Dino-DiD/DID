@@ -1,0 +1,111 @@
+.DIDTitulo{
+    
+    background: linear-gradient(90deg, #15ff00, #00ffd0, #00aaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    box-sizing: border-box;
+}
+
+.menu-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.nav-opciones {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-opciones a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.nav-opciones a:hover {
+    color: #00ffd0;
+}
+
+.menu-lateral {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 54px; /* Altura de la barra superior */
+    left: 0;
+    background: rgba(26, 26, 26, 0.05);    /* Fondo oscuro semitransparente */
+    backdrop-filter: blur(5px);           /* Difuminado más fuerte */
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-lateral a {
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: background 0.2s;
+}
+
+.menu-lateral a:hover {
+    background: rgb(0, 255, 208, 0.5);
+    color: #111;
+}
+
+.cerrar-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+    background: #1a1a1a;         /* Fondo oscuro */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;       /* Bordes redondos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.cerrar-btn:hover {
+    background: #444;
+}
+
+body {
+    background: #212121;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
